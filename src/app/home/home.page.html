@@ -1,12 +1,14 @@
 <ion-header>
+ <!-- <ion-input [(ngModel)]="value"></ion-input> -->
   <ion-toolbar>
     <ion-title>
-      Ionic Blank
+    <ion-icon name="menu" size="large" (click)=" presentPopover($event)"></ion-icon>
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
-</ion-content>
+<ion-content>
+    <!--create a element for map. #Map - identifier -->
+    <div #Map class="map"></div>
+  </ion-content>
+
